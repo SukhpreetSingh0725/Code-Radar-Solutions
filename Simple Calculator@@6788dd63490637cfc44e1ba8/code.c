@@ -14,7 +14,7 @@ int main() {
     } else if(ch=='*'){
         printf("%d",a*b);
     } else if(ch=='/'){
-        printf("%d",div);
+        printf("%.f",div);
     } 
     return 0;
 }
