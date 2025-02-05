@@ -7,9 +7,9 @@ int main() {
         isPrime=0;
     } else {
         for(i=2;i*i<=a;i++){
-        if(a%i==0){
-            isPrime=0;
-        }
+            if(a%i==0){
+                isPrime=0;
+            }
     }
     }
     if(isPrime){
