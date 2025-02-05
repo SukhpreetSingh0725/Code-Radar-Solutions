@@ -2,20 +2,15 @@
 int main() {
     int a,b;
     char ch;
-    int sum,mul,sub,div;
     scanf("%d%d%c",&a,&b,&ch);
-    sum=a+b;
-    sub=a-b;
-    div=a/b;
-    mul=a*b;
     if(ch=='+'){
-        printf("%d",sum);
+        printf("%d",a+b);
     } else if(ch=='-'){
-        printf("%d",sub);
+        printf("%d",a-b);
     } else if(ch=='-'){
-        printf("%d",div);
+        printf("%d",a*b);
     } else if(ch=='/'){
-        printf("%d",mul);
+        printf("%d",a/b);
     }
     return 0;
 }
