@@ -2,9 +2,11 @@
 int main() {
     int a,b;
     char ch;
+    float div;
     scanf("%d\n",&a);
     scanf("%d\n",&b);
     scanf("%c",&ch);
+    div=a/b;
     if(ch=='+'){
         printf("%d",a+b);
     } else if(ch=='-'){
@@ -12,7 +14,7 @@ int main() {
     } else if(ch=='*'){
         printf("%d",a*b);
     } else if(ch=='/'){
-        printf("%f",a/b);
+        printf("%f",div);
     } 
     return 0;
 }
