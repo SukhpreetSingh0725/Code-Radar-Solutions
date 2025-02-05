@@ -9,5 +9,8 @@ int main() {
     else if(let>='a'&& let<='z'){
         printf("Lowercase");
     }
+    else{
+        printf("Not an alphabet");
+    }
     return 0;
 }
