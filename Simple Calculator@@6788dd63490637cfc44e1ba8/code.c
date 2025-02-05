@@ -2,7 +2,7 @@
 int main() {
     int a,b;
     char ch;
-    int sum ,mul,sub,div;
+    int sum,mul,sub,div;
     scanf("%d%d%c",&a,&b,&ch);
     sum=a+b;
     sub=a-b;
