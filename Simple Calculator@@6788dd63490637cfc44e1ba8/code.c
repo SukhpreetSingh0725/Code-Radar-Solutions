@@ -6,7 +6,7 @@ int main() {
     scanf("%d\n",&a);
     scanf("%d\n",&b);
     scanf("%c",&ch);
-    div=a/b;
+    div=(float)a/b;
     if(ch=='+'){
         printf("%d",a+b);
     } else if(ch=='-'){
