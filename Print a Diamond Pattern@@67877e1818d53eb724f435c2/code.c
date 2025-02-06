@@ -25,6 +25,5 @@ int main() {
             printf("%c", '*');
             }
       }
-        printf("\n");
     return 0;
 }
