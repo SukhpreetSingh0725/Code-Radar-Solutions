@@ -8,7 +8,6 @@ int main() {
             printf("%c ",ch+j-1);
             
         }
-        ch++;
         printf("\n");
     }
     
