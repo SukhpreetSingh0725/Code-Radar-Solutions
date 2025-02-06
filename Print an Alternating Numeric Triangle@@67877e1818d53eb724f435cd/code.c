@@ -2,7 +2,7 @@
 int main() {
     int a,i,j;
     scanf("%d",&a);
-    for(i=0;i<a;i++){
+    for(i=1;i<a;i++){
         for(j=1;j<=i;j++){
             if ((i+j)%2==0){
                 printf("1");
@@ -15,6 +15,5 @@ int main() {
         }
         printf("\n");
     }
-
     return 0;
 }
