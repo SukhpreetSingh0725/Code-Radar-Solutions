@@ -5,7 +5,7 @@ int main() {
     
     for(i=0;i<=a;i++){
         for(j=1;j<=i;j++){
-            printf("%d%d",b*j);
+            printf("%d",b*j);
         }
         printf("\n");
     }
