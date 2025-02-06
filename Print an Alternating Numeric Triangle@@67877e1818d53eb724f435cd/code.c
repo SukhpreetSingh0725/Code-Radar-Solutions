@@ -4,7 +4,14 @@ int main() {
     scanf("%d",&a);
     for(i=0;i<a;i++){
         for(j=1;j<=i;j++){
-            printf("%d",j);
+            if ((i + j) % 2 == 0) {
+                printf("1");
+            } else {
+                printf("0");
+            }
+            if (j < i) {
+                printf(" ");
+            }
         }
         printf("\n");
     }
