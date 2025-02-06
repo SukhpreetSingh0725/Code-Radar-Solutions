@@ -4,17 +4,17 @@ int main() {
     scanf("%d",&a);
     for(i=0;i<a;i++){
         for(j=1;j<=i;j++){
-            if ((i + j) % 2 == 0) {
+            if ((i+j)%2==0){
                 printf("1");
-            } else {
+            } else{
                 printf("0");
             }
-            if (j < i) {
+            if (j<i){
                 printf(" ");
             }
         }
         printf("\n");
     }
-    printf("%d", a);
+
     return 0;
 }
