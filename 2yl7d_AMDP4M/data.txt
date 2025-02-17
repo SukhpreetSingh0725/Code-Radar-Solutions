@@ -1,1 +1,1 @@
-[{"index":50,"id":"67b1b41162f15ee14b188d85","title":"Output of nested if-else","correctAnswer":"B","selectedOption":"B","isCorrect":true,"type":"MCQ"}]
+[{"index":50,"id":"67b1b41162f15ee14b188d85","title":"Output of nested if-else","correctAnswer":"B","selectedOption":"B","isCorrect":true,"type":"MCQ"},{"index":51,"id":"67b1b41162f15ee14b188d84","title":"Output of for loop","correctAnswer":"123","selectedOption":"123","isCorrect":true,"type":"MCQ"}]
