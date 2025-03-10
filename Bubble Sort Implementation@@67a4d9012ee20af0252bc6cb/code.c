@@ -1,3 +1,7 @@
+#include<stdio.h>
+int bubbleSort(arr,n);
+int printArray(arr,n);
+
 int main(){
     int n;
     scanf("%d", &n);
