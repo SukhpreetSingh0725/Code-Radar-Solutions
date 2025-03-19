@@ -2,7 +2,7 @@
 int main() {
     unsigned int number;
     scanf("%u", &number);
-    int leading_zeros = __builtin_ctz(number);
-    printf("%d",leading_zeros);
+    int trailing_zeros = __builtin_ctz(number);
+    printf("%d",trailing_zeros);
     return 0;
 }
