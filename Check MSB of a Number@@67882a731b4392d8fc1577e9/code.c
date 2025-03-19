@@ -10,13 +10,11 @@ int main() {
         number >>= 1;
         position++;
     }
-    if (msb_position != -1) {
-        if (number & (1 << msb_position)) {
-            printf("Set");
-        } else {
-            printf("Not Set");
-        }
-    } 
+     if (position > 0 && (original_number & (1 << (position - 1)))) {
+        printf("Set");
+    } else {
+        printf("Not Set");
+    }
     return 0;
 }
 
