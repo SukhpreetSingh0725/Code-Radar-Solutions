@@ -1,6 +1,10 @@
 #include <stdio.h>
 
 void decimal_to_binary(int n) {
+     if (n == 0) {
+        printf("0");
+        return;
+    }
     int binary[32]; 
     int i = 0;
     while (n > 0) {
