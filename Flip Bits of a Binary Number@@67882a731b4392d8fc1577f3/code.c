@@ -1,9 +1,9 @@
 #include <stdio.h>
 int main() {
     unsigned int number;
-    scanf("%u", &number);
+    scanf("%d", &number);
     unsigned int flipped_number = ~number;
-    printf("%u", flipped_number);
+    printf("%d", flipped_number);
 
     return 0;
 }
