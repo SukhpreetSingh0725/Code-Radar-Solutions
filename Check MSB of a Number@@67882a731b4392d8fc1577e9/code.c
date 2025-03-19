@@ -1,7 +1,6 @@
 #include <stdio.h>
-
 int main() {
-    int number;
+    int number,msb;
     scanf("%d", &number);
     while (number != 0) {
         msb = number; 
