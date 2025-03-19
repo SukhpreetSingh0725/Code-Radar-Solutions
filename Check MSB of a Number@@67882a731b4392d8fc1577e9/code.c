@@ -1,14 +1,10 @@
 #include <stdio.h>
+#include <limits.h>
 int main() {
-    int number, original_number;
+    int number;
     scanf("%d", &number);
-    original_number = number;
-    int position = 0;
-    while (number != 0) {
-        number >>= 1;  
-        position++;  
-    }
-    if (position > 0 && (original_number & (1 << (position - 1)))) {
+    int numBits = sizeof(number) * CHAR_BIT;
+    if (number & (1 << (numBits - 1))) {
         printf("Set");
     } else {
         printf("Not Set");
@@ -16,4 +12,5 @@ int main() {
 
     return 0;
 }
+
 
