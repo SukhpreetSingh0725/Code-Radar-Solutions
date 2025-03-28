@@ -11,7 +11,7 @@ int main() {
     scanf("%d",&n);
     int arr[n];
     n = sizeof(arr) / sizeof(arr[0]);
-    int res = findFirstPeak(arr, n)
+    int res = findFirstPeak(arr, n);
     printf("%d\n", res);
     return 0;
 }
