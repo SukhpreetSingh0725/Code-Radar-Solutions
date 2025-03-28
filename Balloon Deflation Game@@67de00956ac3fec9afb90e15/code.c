@@ -2,7 +2,6 @@
 #include <stdlib.h>
 
 void deflateBalloons(int air[], int n) {
-
     for (int i = 0; i < n - 1; i++) {
         for (int j = 0; j < n - i - 1; j++) {
             if (air[j] > air[j + 1]) {
@@ -13,18 +12,17 @@ void deflateBalloons(int air[], int n) {
         }
     }
 
-    int remaining = n;
+    int remaining = n; 
+    int last_removed = 0; 
 
     for (int i = 0; i < n; i++) {
-        if (air[i] > 0) {
-            printf("%d\n", remaining - 1);  
-            int min_air = air[i]; 
-            for (int j = i; j < n; j++) {
-                air[j] -= min_air; 
-            }
-            remaining--; 
+        if (air[i] > last_removed) { 
+            printf("%d\n", remaining);
+            last_removed = air[i]; 
         }
+        remaining--; 
     }
 }
+
 
 
