@@ -1,11 +1,12 @@
 #include <stdio.h>
+
 int nextPrime(int d) {
     if (d <= 1) return 2;
     if (d == 2) return 2;
     if (d <= 3) return 3;
     if (d <= 5) return 5;
     if (d <= 7) return 7;
-    return 11;  
+    return 2; // Convert digits > 7 to 2
 }
 
 int incrementToPrimeDigits(int num) {
@@ -17,6 +18,8 @@ int incrementToPrimeDigits(int num) {
     }
     return result;
 }
+
+
 
 
 
