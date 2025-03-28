@@ -1,23 +1,22 @@
 #include <stdio.h>
-int isPrime(int n) {
-    if (n < 2) return 0;
-    for (int i = 2; i * i <= n; i++) if (n % i == 0) return 0;
-    return 1;
-}
-
 int nextPrime(int d) {
-    while (!isPrime(++d));
-    return d;
+    if (d <= 1) return 2;
+    if (d == 2) return 2;
+    if (d <= 3) return 3;
+    if (d <= 5) return 5;
+    if (d <= 7) return 7;
+    return 11;  
 }
 
 int incrementToPrimeDigits(int num) {
     int result = 0, place = 1;
     while (num) {
         result = nextPrime(num % 10) * place + result;
-        place *= 10 + (num % 10 >= 7); 
+        place *= 10;
         num /= 10;
     }
     return result;
 }
+
 
 
