@@ -1,14 +1,14 @@
 #include <stdio.h>
 
-void findEvenOdd(int arr[], int n,*Even,*Odd) {
+void findEvenOdd(int arr[], int n,int *Even, int *Odd) {
     *Even=0;
     *Odd=0;
-    for (int i = 0; i < n-1; i++) {
+    for (int i = 0; i < n; i++) {
         if (arr[i]%2==0) {
-            Even++;
+            *Even++;
         }
         else if (arr[i]%2 !=0) {
-            Odd++;
+            *Odd++;
         }
     }
 }
