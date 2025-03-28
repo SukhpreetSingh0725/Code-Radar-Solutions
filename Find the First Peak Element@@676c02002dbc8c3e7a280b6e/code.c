@@ -10,7 +10,8 @@ int main() {
     int n;
     scanf("%d",&n);
     int arr[n];
-     n = sizeof(arr) / sizeof(arr[0]);
-    printf("%d\n", findFirstPeak(arr, n));
+    n = sizeof(arr) / sizeof(arr[0]);
+    int res = findFirstPeak(arr, n)
+    printf("%d\n", res);
     return 0;
 }
