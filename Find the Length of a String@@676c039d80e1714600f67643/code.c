@@ -2,7 +2,7 @@
 #include<string.h>
 int main(){
     char a[30];
-    scanf("%s",a);
+    fgets("%s",a);
     printf("%d",strlen(a));
     return 0;
 }
