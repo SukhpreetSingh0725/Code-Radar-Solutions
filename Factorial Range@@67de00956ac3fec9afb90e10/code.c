@@ -10,7 +10,7 @@ void factorialRange(int start, int end) {
         return;
     }
 
-    for (int i = start; i < end; i++) {
+    for (int i = start; i <= end; i++) {
         printf("%d\n", factorial(i));
     }
 }
