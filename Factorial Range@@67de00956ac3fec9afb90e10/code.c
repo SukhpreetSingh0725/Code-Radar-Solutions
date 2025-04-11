@@ -1,6 +1,6 @@
 int factorial(int n){
     int fact=1;
-    return fact*(fact(n-1));
+    return fact*(factorial(n-1));
 }
 int factorialrange(int start,int end){
     int fact=1;
