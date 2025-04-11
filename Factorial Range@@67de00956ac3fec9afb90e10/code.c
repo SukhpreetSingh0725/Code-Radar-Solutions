@@ -8,7 +8,7 @@ int factorialrange(int start,int end){
         printf("Invalid range");
     }
     else{
-        for(int i=start, i<end,i++){
+        for(int i=start; i<end; i++){
             printf(factorial(start));
             printf("\n");
         }
