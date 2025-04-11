@@ -4,7 +4,7 @@ int main() {
     char a[30],b[30];
     fgets(a, 30, stdin);
     int len = strlen(a);
-    b=a;
+    b[30]=a[30];
     if (a[len - 1] == '\n') a[--len] = '\0';
     for(int i = 0; i < len / 2; i++) {
         char temp = a[i];
