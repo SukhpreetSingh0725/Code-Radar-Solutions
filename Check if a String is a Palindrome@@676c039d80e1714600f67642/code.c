@@ -11,7 +11,7 @@ int main() {
         a[i] = a[len - i - 1];
         a[len - i - 1] = temp;
     }
-    if (b==a){
+    if (b==temp){
         printf("Yes");
     }
     else{
