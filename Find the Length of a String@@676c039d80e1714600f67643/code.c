@@ -3,6 +3,10 @@
 int main(){
     char a[30];
     fgets(a,100,stdin);
-    printf("%d",strlen(a));
+    if(a==NULL){
+        printf("0");
+    }
+    else{
+    printf("%d",strlen(a));}
     return 0;
 }
