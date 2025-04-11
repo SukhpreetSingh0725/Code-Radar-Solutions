@@ -1,12 +1,12 @@
-#include<stdio.h>
-#include<string.h>
-int main(){
+#include <stdio.h>
+#include <string.h>
+int main() {
     char a[30];
-    fgets(a,100,stdin);
-    if(a==NULL){
+    if(fgets(a, 30, stdin) == NULL) {
         printf("0");
+    } else {
+        printf("%d", strlen(a));
     }
-    else{
-    printf("%d",strlen(a));}
+
     return 0;
 }
