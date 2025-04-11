@@ -1,18 +1,16 @@
-int factorial(int n){
-    int fact=1;
-    return fact*(factorial(n-1));
+int factorial(int n) {
+    if (n == 0 || n == 1)
+        return 1;
+    else
+        return n * factorial(n - 1);
 }
-int factorialrange(int start,int end){
-    int fact=1;
-    if(start<0){
-        printf("Invalid range");
-    }
-    else{
-        for(int i=start; i<end; i++){
-            printf(factorial(start));
-            printf("\n");
-        }
-        
+void factorialrange(int start, int end) {
+    if (start < 0 || end < 0 || start >= end) {
+        printf("Invalid range\n");
+        return;
     }
 
+    for (int i = start; i < end; i++) {
+        printf("%d\n", factorial(i));
+    }
 }
