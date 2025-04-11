@@ -11,7 +11,7 @@ int main() {
         a[i] = a[len - i - 1];
         a[len - i - 1] = temp;
     }
-    if (strcmp(b==a)){
+    if (strcmp(a,b)==0){
         printf("Yes");
     }
     else{
